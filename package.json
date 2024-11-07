@@ -1,12 +1,13 @@
 {
   "name": "sportcalcapp",
-  "productName": "sportcalcapp",
+  "productName": "Інтегрована діагностика",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "Інтегрована діагностика",
   "main": ".webpack/main",
   "scripts": {
     "start": "electron-forge start",
-    "package": "electron-forge package",
+    "build": "webpack --mode production",
+    "package": "electron-builder",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
     "lint": "echo \"No linting configured\""
@@ -16,6 +17,7 @@
     "@babel/preset-react": "^7.25.9",
     "@electron-forge/cli": "^7.5.0",
     "@electron-forge/maker-deb": "^7.5.0",
+    "@electron-forge/maker-dmg": "^7.5.0",
     "@electron-forge/maker-rpm": "^7.5.0",
     "@electron-forge/maker-squirrel": "^7.5.0",
     "@electron-forge/maker-zip": "^7.5.0",
@@ -33,7 +35,8 @@
     "postcss": "^8.4.47",
     "postcss-loader": "^8.1.1",
     "style-loader": "^3.3.4",
-    "tailwindcss": "^3.4.14"
+    "tailwindcss": "^3.4.14",
+    "webpack-cli": "^5.1.4"
   },
   "keywords": [],
   "author": {
@@ -48,5 +51,19 @@
     "electron-squirrel-startup": "^1.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
+  },
+  "build": {
+    "appId": "com.example.diagnosticapplication",
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ]
+    }
   }
 }
