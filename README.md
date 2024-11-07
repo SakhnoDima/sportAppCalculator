@@ -1,21 +1,21 @@
-# Інтегрована діагностика
+# Integrated Diagnostics
 
-**Версія:** 1.0.0  
-**Опис:** Інтегрована діагностика - це застосунок, розроблений на базі Electron, який забезпечує кросплатформену підтримку для роботи з інструментами діагностики.
+**Version:** 1.0.0  
+**Description:** Integrated Diagnostics is an application developed with Electron, providing cross-platform support for working with diagnostic tools.
 
-## Встановлення
+## Installation
 
-Для запуску проєкту необхідні такі передумови:
+The following prerequisites are required to run the project:
 
-- **Node.js** версії 14 або новішої
-- **npm** або **yarn** (npm встановлюється разом із Node.js)
+- **Node.js** version 14 or newer
+- **npm** or **yarn** (npm is installed with Node.js)
 
-### Кроки встановлення
+### Installation Steps
 
-1. **Склонуйте репозиторій**
+1. **Clone the repository**  
    git clone https://github.com/SakhnoDima/sportAppCalculator
    cd sportcalcapp
-2. **Встановіть залежності**
+2. **Install dependencies**
    npm install
-3. **Запуск в режимі розробки**
+3. **Run in development mode**
    npm run start 
